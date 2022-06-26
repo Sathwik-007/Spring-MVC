@@ -1,0 +1,62 @@
+package com.cognizant.truyum.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cognizant.truyum.dao.MenuItemDao;
+import com.cognizant.truyum.dao.MenuItemDaoCollectionImpl;
+import com.cognizant.truyum.model.MenuItem;
+
+public class MenuItemService {
+
+	/**
+	 * An instance of {@link com.cognizant.truyum.dao.CartDao} class
+	 */
+
+	@Autowired
+	private MenuItemDao menuItemDao;
+
+	public void setMenuItemDao(MenuItemDao menuItemDao) {
+		this.menuItemDao = menuItemDao;
+	}
+
+	/**
+	 * Invokes
+	 * {@link com.cognizant.truyum.dao.MenuItemDaoCollectionImpl#getMenuItemListAdmin()}
+	 * and return the {@link java.util.ArrayList} of {@link MenuItem} in the view of
+	 * Administrator
+	 * 
+	 * @return
+	 */
+	public List<MenuItem> getMenuItemListAdmin() {
+		return menuItemDao.getMenuItemListAdmin();
+	}
+
+	/**
+	 * Invokes
+	 * {@link com.cognizant.truyum.dao.MenuItemDaoCollectionImpl#getMenuItemListCustomer()}
+	 * and return the {@link java.util.ArrayList} of {@link MenuItem} in the view of
+	 * Customer
+	 **/
+	public List<MenuItem> getMenuItemListCustomer() {
+		return menuItemDao.getMenuItemListCustomer();
+	}
+
+	/**
+	 * Invokes
+	 * {@link com.cognizant.truyum.dao.MenuItemDaoCollectionImpl#getMenuItem(long)}
+	 * and return {@link MenuItem}
+	 **/
+	public MenuItem getMenuItem(long menuItemId) {
+		return menuItemDao.getMenuItem(menuItemId);
+	}
+
+	/**
+	 * Invokes {@link MenuItemDaoCollectionImpl#modifyMenuItem(MenuItem)}
+	 */
+	public void editMenuItem(MenuItem menuItem) {
+		menuItemDao.modifyMenuItem(menuItem);
+	}
+
+}

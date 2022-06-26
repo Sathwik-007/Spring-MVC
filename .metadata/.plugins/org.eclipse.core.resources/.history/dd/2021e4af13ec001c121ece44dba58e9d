@@ -1,0 +1,20 @@
+package com.cognizant.truyum.service;
+
+import java.util.List;
+
+import com.cognizant.truyum.dao.CartDao;
+import com.cognizant.truyum.model.MenuItem;
+
+public class CartService {
+	private CartDao cartDao;
+
+	/**
+	 * Invokes
+	 * {@link com.cognizant.truyum.dao.CartDaoCollectionImpl#getAllCartItems(long)}
+	 * and returns {@link java.util.ArrayList} of
+	 * {@link com.cognizant.truyum.model.MenuItem}
+	 */
+	public List<MenuItem> getAllCartItems(long userId) {
+
+	}
+}

@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [25/May/2022:18:40:48 +0530] "GET / HTTP/1.1" 404 951 http-bio-8080-exec-1 26
+0:0:0:0:0:0:0:1 - - [25/May/2022:18:40:59 +0530] "GET /my-first-webapp/login.do HTTP/1.1" 404 999 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [25/May/2022:18:41:11 +0530] "GET /my-first-webapp/login.do HTTP/1.1" 404 999 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [25/May/2022:18:41:51 +0530] "GET /my-first-webapp/login.do HTTP/1.1" 404 999 http-bio-8080-exec-5 4
+0:0:0:0:0:0:0:1 - - [25/May/2022:22:32:43 +0530] "GET / HTTP/1.1" 404 951 http-bio-8080-exec-1 40
+0:0:0:0:0:0:0:1 - - [25/May/2022:22:32:50 +0530] "GET /practise/loginpage HTTP/1.1" 404 949 http-bio-8080-exec-3 99
+0:0:0:0:0:0:0:1 - - [25/May/2022:23:47:31 +0530] "GET /practise/loginpage HTTP/1.1" 200 287 http-bio-8080-exec-1 456
+0:0:0:0:0:0:0:1 - - [25/May/2022:23:48:27 +0530] "POST /loginpage HTTP/1.1" 404 949 http-bio-8080-exec-3 14
+0:0:0:0:0:0:0:1 - - [25/May/2022:23:51:01 +0530] "GET /spring-mvc/login HTTP/1.1" 404 949 http-bio-8080-exec-5 6
+0:0:0:0:0:0:0:1 - - [25/May/2022:23:51:07 +0530] "GET /practise/loginpage HTTP/1.1" 404 949 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [25/May/2022:23:51:15 +0530] "GET /practise/loginpage HTTP/1.1" 404 949 http-bio-8080-exec-8 3

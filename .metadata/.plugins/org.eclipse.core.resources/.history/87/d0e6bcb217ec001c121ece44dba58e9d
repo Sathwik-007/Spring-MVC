@@ -1,0 +1,12 @@
+package com.cognizant.truyum.service.test;
+
+import org.junit.Test;
+
+public class MenuItemServiceTest {
+
+	@Test
+	public void test() {
+		
+	}
+
+}

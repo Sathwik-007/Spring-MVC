@@ -1,0 +1,26 @@
+<!-- webapp/WEB-INF/web.xml -->
+<web-app    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                                http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+            id="WebApp_ID" version="3.1">
+
+	<display-name>To do List</display-name>
+
+	<servlet>
+		<servlet-name>My Login Servlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		
+		<!-- To tell the location of atual dispatcher servlet, we use following tags -->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/myservlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>My Login Servlet</servlet-name>
+		<url-pattern>/practise/*</url-pattern>
+	</servlet-mapping>
+</web-app>

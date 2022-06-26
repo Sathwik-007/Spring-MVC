@@ -1,0 +1,44 @@
+package com.cognizant.truyum.service.test;
+
+import org.junit.Test;
+
+import com.cognizant.truyum.model.MenuItem;
+
+public class MenuItemServiceTest {
+
+	/*
+	 * @Test
+	public void testRetrieveTodosRelatedToSpring_usingAMock() {
+
+		TodoService todoServiceMock = mock(TodoService.class);
+		TodoBusinessImpl todoBusinessImpl = new TodoBusinessImpl(todoServiceMock);
+		List<String> springTodos = new ArrayList<>();
+		when(todoBusinessImpl.retrieveTodosRelatedToSpring("Dummy")).thenReturn(springTodos);
+		assertEquals(0, springTodos.size());
+		
+	}
+	
+	@Test
+	public void test() {
+		
+		// mocking the class
+		TodoService todoServiceMock = mock(TodoService.class);
+		
+		// now mock the methods
+		List<String> todos = Arrays.asList("AAA", "BBB", "CCCC");
+		given(todoServiceMock.retrieveTodos("Dummy")).willReturn(todos);
+		
+		// now assert the results
+		TodoBusinessImpl todoBusinessImpl = new TodoBusinessImpl(todoServiceMock);
+		assertThat(todoBusinessImpl.getTodoService().retrieveTodos("Dummy").size(), is(3));
+		System.out.println(todoBusinessImpl.getTodoService().retrieveTodos("Dummy"));
+		
+	}
+
+	 * */
+	
+	@Test
+	public void testGetMenuItemListAdmin_usingAMock() {
+		MenuItem menuItemMock = mock(MenuItem.class);
+	}
+}
